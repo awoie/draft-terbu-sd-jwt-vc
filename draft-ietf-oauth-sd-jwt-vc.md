@@ -234,9 +234,7 @@ For example, a value of `https://credentials.example.com/identity_credential` ca
 SD-JWT VCs MAY use any claim registered in the "JSON Web Token Claims"
 registry as defined in [@!RFC7519].
 
-If present, the following registered JWT claims MUST be included in the SD-JWT
-and MUST NOT be included in the Disclosures, i.e. cannot be selectively
-disclosed:
+The following registered JWT claims are used within the SD-JWT component of the SD-JWT VC and MUST NOT be included in the Disclosures, i.e., cannot be selectively disclosed:
 
 * `iss`
     * REQUIRED. The Issuer of the Verifiable Credential. The value of `iss`
@@ -258,8 +256,7 @@ information.
 Credential. See [@!I-D.ietf-oauth-status-list]
  for more information.
 
-The following registered JWT claims MAY be contained in the SD-JWT or in the
-Disclosures and MAY be selectively disclosed:
+The following registered JWT claims are used within the SD-JWT component of the SD-JWT VC and MAY be included in Disclosures, i.e., can be selectively disclosed:
 
 * `sub`
     * OPTIONAL. The identifier of the Subject of the Verifiable Credential.
@@ -1569,6 +1566,10 @@ Kristina Yasuda
 for their contributions (some of which substantial) to this draft and to the initial set of implementations.
 
 # Document History
+
+-10
+
+* Editorial changes
 
 -09
 
